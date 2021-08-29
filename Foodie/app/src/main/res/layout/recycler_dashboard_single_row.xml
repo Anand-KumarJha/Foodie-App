@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="3dp"
+    android:background="#FFFFFF"
+    app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:id="@+id/liContent"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/rowImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/splash_icon" />
+
+
+        <TextView
+            android:id="@+id/nameRecyclerRow"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/rowImage"
+            android:maxLines="1"
+            android:text="@string/hello"
+            android:textColor="#FF9800"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/dollarIcon"
+            android:layout_width="18dp"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginBottom="11dp"
+            android:layout_toEndOf="@id/rowImage"
+            android:src="@drawable/rupee" />
+
+        <TextView
+            android:id="@+id/priceRecyclerRow"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/dollarIcon"
+            android:maxLines="1"
+            android:text="@string/_10_person"
+            android:textColor="#0C8C12"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/favouritesIcon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_action_favourite" />
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="11dp"
+            android:text="@string/_4_5"
+            android:textColor="@color/purple_500"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

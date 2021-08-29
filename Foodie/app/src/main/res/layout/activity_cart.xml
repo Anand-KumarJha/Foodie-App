@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activity.DescriptionActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FF5722"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtCartRestaurant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="62dp"
+                android:text="@string/ordering_from_pind_tadka"
+                android:textColor="#171717"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/finish"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="93dp"
+                android:background="#FF5722" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerMenu1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/finish"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="46dp"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/checkoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="#FF6F22"
+                android:text="@string/place_order_rs_0"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>
