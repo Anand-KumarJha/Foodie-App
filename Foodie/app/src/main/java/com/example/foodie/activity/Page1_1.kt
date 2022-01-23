@@ -51,7 +51,6 @@ class Page1_1 : AppCompatActivity() {
                     Toast.makeText(this, "Please enter valid email", Toast.LENGTH_LONG).show()
                 }
                 else -> {
-
                     val jsonRequest =
                         object : JsonObjectRequest(Request.Method.POST, url, jsonParams,
                             Response.Listener {

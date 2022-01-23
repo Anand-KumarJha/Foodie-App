@@ -23,7 +23,6 @@ class OrderHistoryRecyclerAdapter(
         lateinit var recyclerAdapter: CartRecyclerAdapter
         val restaurantName: TextView = view.findViewById(R.id.restaurantName)
         val restaurantDate: TextView = view.findViewById(R.id.orderDate)
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OrderHistoryViewHolder {
